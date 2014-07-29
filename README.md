@@ -16,9 +16,8 @@ Installation
 
 
 
-**Screwdriver est distribué sous license BeerWare:**
-
-* ----------------------------------------------------------------------------*
+Screwdriver est distribué sous license BeerWare:
+-----------------
 
 « LICENCE BEERWARE » (Révision 42):
 
@@ -28,9 +27,8 @@ vous pouvez faire ce que vous voulez de ce truc. Si on se rencontre un jour et
 
 que vous pensez que ce truc vaut le coup, vous pouvez me payer une bière en retour.
 
-Mister aiR
+*Mister aiR*
 
-* ----------------------------------------------------------------------------*
 
 
 
