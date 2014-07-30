@@ -508,10 +508,7 @@ box-shadow: 0 1px #fff;
 }
 .category.stick.active{
 background: linear-gradient(180deg, #222, #171717) #171717;
-border-width: medium medium 1px;
-border-style: none none solid;
-border-color: -moz-use-text-color -moz-use-text-color #171717;
-box-shadow: 0px 2px 2px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
+box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 border-radius: 4px;
 }
 .category .btn:first-child {
@@ -532,7 +529,10 @@ border-radius: 4px;
 
 /*=== Aside main page (feeds) */
 .categories .feeds .item.active {
-	background: #0062BE;
+	background: linear-gradient(180deg, #222, #171717) #171717;
+	border-radius: 4px;
+	margin: 0px 8px;
+	box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 }
 .categories .feeds .item.active .feed {
 	color: #fff;
@@ -842,11 +842,17 @@ border-radius: 4px;
 
 /*=== GLOBAL VIEW */
 /*================*/
+#stream.global{
+	background:#222;
+	padding: 24px 0;
+	box-shadow: 0 1px #fff, 0 -2px 2px #171717 inset, 0 2px 2px #171717 inset;
+}
 #stream.global .box-category {
 	background: #fff;
-	border-radius: 5px;
+	border-radius: 4px 4px 0 0 ;
 	text-align: left;
-	box-shadow: 0 0 3px #bbb;
+	box-shadow: 0 0 4px #000;
+	overflow:hidden;
 }
 #stream.global .category {
 	margin: 0;
@@ -856,21 +862,22 @@ border-radius: 4px;
 	height: 2em;
 	margin: 0;
 	padding: 0 10px;
-	background: #f6f6f6;
+	background: linear-gradient(180deg, #222, #171717) #171717;
 	border: none;
-	border-bottom: 1px solid #ddd;
-	border-radius: 5px 5px 0 0;
+	box-shadow: 0 -1px rgba(255,255,255,0.08)inset;
+	border-radius: none;
 	line-height: 2em;
 	font-size: 1.2rem;
+	color:#fff;
+	text-shadow:0 1px rgba(255,255,255,0.08);
 }
 #stream.global .btn:not([data-unread="0"]) {
-	background: #0084CC;
-	color: #fff;
+	background: linear-gradient(180deg, #E4992C 0%, #D18114 100%) #E4992C;
 	font-weight: bold;
-	text-shadow: none;
 }
 #stream.global .btn:first-child:not([data-unread="0"]):after {
-	top: 0; right: 5px;
+	top: 0;
+	right: 5px;
 	border: 0;
 	background: none;
 	color: #fff;
@@ -880,10 +887,12 @@ border-radius: 4px;
 }
 #stream.global .box-category .feeds {
 	max-height: 250px;
+	color:#222;
 }
 #stream.global .box-category .feeds .item {
 	padding: 2px 10px;
 	font-size: 0.9rem;
+	overflow:hidden;
 }
 
 /*=== DIVERS */

@@ -92,6 +92,20 @@ input.extend:focus {
 /*=== COMPONENTS */
 /*===============*/
 /*=== Forms */
+.form-group{
+	width: 100%;
+	float: left;
+	height: auto;
+	display: inline-block;
+}
+.form-group .group-controls a.btn{
+	color:#222;
+	border: solid 1px #ccc;
+    background: linear-gradient(0deg, #EDE7DE, #FFF) repeat scroll 0% 0% #EDE7DE;
+    box-shadow: 0px 1px #;
+    border-radius: 4px;
+}
+}
 .form-group:after {
 	content: "";
 	display: block;
@@ -385,6 +399,9 @@ a.btn {
 .flux .item.title {
 text-decoration: line-through;
 }
+.flux.favorite .item.title {
+text-decoration: none;
+}
 .flux.not_read .item.title {
 text-decoration: none;
 }
@@ -530,7 +547,6 @@ text-decoration: none;
 	width: 19em;
 	max-width: 95%;
 	margin: 20px 10px;
-	border: 1px solid #ccc;
 	vertical-align: top;
 }
 #stream.global .category {
@@ -546,6 +562,7 @@ text-decoration: none;
 #stream.global .box-category .feed {
 	width: 19em;
 	max-width: 90%;
+	color:#222;
 }
 
 /*=== Panel */
