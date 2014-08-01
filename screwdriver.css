@@ -671,7 +671,6 @@ border-radius: 4px;
 	opacity:0.85;
 }
 .flux.favorite {
-	border-left: 2px solid #FFC300;
 	background: #FFF6DA;
 }
 .flux.favorite:not(.current):hover .item.title {
@@ -801,16 +800,12 @@ border-radius: 4px;
 	text-decoration: none;	
 	text-shadow: 0 -1px 0 #aaa;
 	color: #666;
-	background: #fafafa;
+	background: #EDE7DE;
 }
 #bigMarkAsRead:hover {
 	color: #000;
-	background: #ccc;
-	background: radial-gradient(circle at 50% -25% , #ccc 0%, #fafafa 50%);
-	background: -moz-radial-gradient(circle at 50% -25% , #ccc 0%, #fafafa 50%);
-	background: -webkit-radial-gradient(circle at 50% -25% , #ccc 0%, #fafafa 50%);
-	background: -o-radial-gradient(circle at 50% -25% , #ccc 0%, #fafafa 50%);
-	background: -ms-radial-gradient(circle at 50% -25% , #ccc 0%, #fafafa 50%);
+	background: #EDE7DE;
+	background: radial-gradient(circle at 50% -25% , #ccc 0%, #EDE7DE 50%);
 }
 #bigMarkAsRead:hover .bigTick {
 	text-shadow: 0 0 10px #666;
@@ -967,7 +962,6 @@ border-radius: 4px;
 @media(max-width: 840px) {
 	.aside {
 		border-top:none;
-		width:254px;
 		box-shadow: 3px 0 3px #000;
 		transition: width 200ms linear;
 		-moz-transition: width 200ms linear;
