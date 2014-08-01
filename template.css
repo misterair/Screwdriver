@@ -580,6 +580,8 @@ text-decoration: none;
 	left: 2em; right: 2em;
 	overflow: auto;
 	background: #fff;
+	box-shadow: 0px 0px 4px #000;
+	border-radius: 8px;
 }
 #panel .close {
 	position: fixed;
@@ -611,7 +613,7 @@ text-decoration: none;
 
 /*=== MOBILE */
 /*===========*/
-@media(max-width: 840px) {
+@media screen and (max-width: 900px) {
 	.header,
 	.aside .btn-important,
 	.aside .feeds .dropdown,
