@@ -2,10 +2,10 @@
 
 /*=== GENERAL */
 /*============*/
-html, body {
+html, body { 
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
+	font-size: 92%;
 }
 
 /*=== Links */
@@ -101,8 +101,8 @@ input.extend:focus {
 .form-group .group-controls a.btn{
 	color:#222;
 	border: solid 1px #ccc;
-    background: linear-gradient(0deg, #EDE7DE, #FFF) repeat scroll 0% 0% #EDE7DE;
-    box-shadow: 0px 1px #;
+    background: linear-gradient(0deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
+    background: -webkit-linear-gradient(bottom, #EDE7DE 0%, #FFF 100%);
     border-radius: 4px;
 }
 }
@@ -307,7 +307,7 @@ a.btn {
 .aside {
 	display: table-cell;
 	height: 100%;
-	width: 250px;
+	width: 235px;
 	vertical-align: top;
 }
 .aside.aside_flux {
@@ -504,7 +504,7 @@ text-decoration: none;
 	position: fixed;
 	bottom: 0; left: 0;
 	display: table;
-	width: 250px;
+	width: 235px;
 	background: #fff;
 	table-layout: fixed;
 }
@@ -613,7 +613,7 @@ text-decoration: none;
 
 /*=== MOBILE */
 /*===========*/
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 	.header,
 	.aside .btn-important,
 	.aside .feeds .dropdown,
@@ -635,14 +635,15 @@ text-decoration: none;
 
 	.aside {
 		position: fixed;
-		top: 0; bottom: 0;
+		top: 0;
+		bottom: 0;
 		left: 0;
 		width: 0;
 		overflow: hidden;
 		z-index: 100;
 	}
 	.aside:target {
-		width: 250px;
+		width: 235px;
 		overflow: auto;
 	}
 	.aside .categories {
