@@ -573,7 +573,7 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 	background: -webkit-linear-gradient(top, #222 0%, #171717 100%);
 	border-radius: 4px;
 	margin: 0px 8px;
-	box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
+	box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset, 0 2px 2px #111;
 }
 .categories .feeds .item.active .feed {
 	color: #fff;
@@ -706,12 +706,13 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 	background: #EDE7DE;
 }
 .flux:hover {
-	background: #fff;
+	background: #F9F7F4;
+}
+.flux:not(.current):hover .item.title {
+	background: #F9F7F4;
 }
 .flux.current .flux .item.title a {
 	text-shadow:0 0 2px #ccc;
-}
-.flux.not_read {
 }
 .flux.not_read:not(.current):hover .item.title {
 	opacity:0.85;
@@ -719,8 +720,11 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 .flux.favorite {
 	background: #FFF6DA;
 }
+.flux.favorite:not(.current):hover{
+	background: #F9F7F4;
+}
 .flux.favorite:not(.current):hover .item.title {
-	background: #FFF6DA;
+	background: #F9F7F4;
 }
 .flux.current {
     background: linear-gradient(0deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
@@ -807,36 +811,30 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 .notification {
 	padding: 0 0 0 5px;
 	text-align: center;
-	border: 1px solid #eeb;
-	border-radius: 3px;
-	box-shadow: 0 0 5px #ddd;
+	background:#222;
+	border: none;
+	border-radius: 0 0 12px 12px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.45), 0 -1px rgba(255,255,255,0.08) inset, 0 2px 2px #171717 inset;
+	color:#fff;
 	font-weight: bold;
 	font-size: 0.9em;
 	line-height: 3em;
+	position:absolute;
+	top:0;
 	z-index: 10;
 	vertical-align: middle;
 }
 .notification.good {
-	background: #ffe;
-	border: 1px solid #eeb;
 	color: #c95;
 }
 .notification.bad {
 	background: #fdd;
-	border: 1px solid #ecc;
 	color: #844;
 }
 .notification a.close {
 	padding: 0 15px;
 	line-height: 3em;
 }
-.notification.good a.close:hover {
-	background: #eeb;
-}
-.notification.bad a.close:hover {
-	background: #ecc;
-}
-
 .notification#actualizeProgress {
 	line-height: 2em;
 }
