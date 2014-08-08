@@ -200,10 +200,9 @@ a.btn {
 	text-shadow: 0 0 2px #fff;
 	text-decoration:none;
 }
-.btn.active,
-.btn:active,
-.dropdown-target:target ~ .btn.dropdown-toggle {
-	background: transparent;
+.btn.active,.btn:active,.dropdown-target:target ~ .btn.dropdown-toggle {
+	box-shadow: 0px 2px #E2972A;
+	border-radius: 0 !important;
 }
 .read_all {
 color:#222;
@@ -248,7 +247,11 @@ box-shadow: 0 1px #fff;
 	background: #BD362F;
 	box-shadow: none;
 }
-
+.btn[type="reset"]{
+    background:linear-gradient(180deg, #222 0%, #171717 100%) #171717;
+    background: -webkit-linear-gradient(top, #222 0%, #171717 100%);
+    box-shadow:0 -1px rgba(255,255,255,0.08) inset
+}
 /*=== Navigation */
 .header{
 display: table !important;
@@ -367,10 +370,7 @@ display: none !important;
 	-ms-transform: rotate(45deg);
 }
 .dropdown-header {
-	padding: 0 5px 5px;
-	color: #222;
-	text-align: left;
-	font-size:0em;
+	display:none;
 }
 .dropdown-menu > .item {
 }
@@ -541,7 +541,7 @@ display: none !important;
 ul.feeds{
     background:#171717;
     padding:8px 0;
-    box-shadow: 0 2px 2px #111 inset,0 1px rgba(255,255,255,0.08),0 -1px rgba(255,255,255,0.08);
+    box-shadow: 0 4px 4px #EDE7DE inset;
 }
 ul.feeds.active{
 	box-shadow: 0 0 0 #171717 inset, 0 -2px 2px #111 inset,0 1px rgba(255,255,255,0.08),0 -1px rgba(255,255,255,0);
@@ -892,7 +892,7 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 	background: #fff;
 	border-radius: 4px 4px 0 0 ;
 	text-align: left;
-	box-shadow: 0 0 4px #000;
+	box-shadow: 0 0 4px #171717;
 	overflow:hidden;
 }
 #stream.global .category {
@@ -903,19 +903,18 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 	height: 2em;
 	margin: 0;
 	padding: 0 10px;
-	background: linear-gradient(180deg, #222 0%, #171717 100%) #171717;
-	background: -webkit-linear-gradient(top, #222 0%, #171717 100%);
+	background: linear-gradient(0deg, #EDE7DE 0%, #fff 100%) #171717;
+	background: -webkit-linear-gradient(bottom, #EDE7DE 0%, #fff 100%);
 	border: none;
-	box-shadow: 0 -1px rgba(255,255,255,0.08)inset;
+	box-shadow: 0px -1px #fff inset,0 -2px #ccc inset;
 	border-radius: none;
 	line-height: 2em;
 	font-size: 1.2rem;
-	color:#fff;
-	text-shadow:0 1px rgba(255,255,255,0.08);
+	color:#888;
+	text-shadow:0 1px #ccc;
 }
 #stream.global .btn:not([data-unread="0"]) {
-	background: linear-gradient(180deg, #E4992C 0%, #D18114 100%) #E4992C;
-	background: -webkit-linear-gradient(top, #E4992C 0%, #D18114 100%);
+	color: #222;
 	font-weight: bold;
 }
 #stream.global .btn:first-child:not([data-unread="0"]):after {
@@ -923,7 +922,7 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 	right: 5px;
 	border: 0;
 	background: none;
-	color: #fff;
+	color: #222;
 	font-weight: bold;
 	box-shadow: none;
 	text-shadow: none;
@@ -931,6 +930,7 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 #stream.global .box-category .feeds {
 	max-height: 250px;
 	color:#222;
+	background:#EDE7DE;
 }
 #stream.global .box-category .feeds .item {
 	padding: 2px 10px;

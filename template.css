@@ -98,12 +98,18 @@ input.extend:focus {
 	height: auto;
 	display: inline-block;
 }
+.form-group .group-controls a.btn.confirm{
+	border: solid 1px #ccc;
+	border-radius: 4px;
+}
 .form-group .group-controls a.btn{
 	color:#222;
-	border: solid 1px #ccc;
+	border-left:none;
+	border-top: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
     background: linear-gradient(0deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
     background: -webkit-linear-gradient(bottom, #EDE7DE 0%, #FFF 100%);
-    border-radius: 4px;
 }
 }
 .form-group:after {
