@@ -538,13 +538,16 @@ display: none !important;
 	margin: 10px auto 0;
 	text-align: left;
 }
+#aside_flux ul.feeds{
+    box-shadow: 0 4px 4px #171717 inset, 0 1px rgba(255,255,255,0.08),0 -1px rgba(255,255,255,0.08);
+}
 ul.feeds{
     background:#171717;
     padding:8px 0;
     box-shadow: 0 4px 4px #EDE7DE inset;
 }
 ul.feeds.active{
-	box-shadow: 0 0 0 #171717 inset, 0 -2px 2px #111 inset,0 1px rgba(255,255,255,0.08),0 -1px rgba(255,255,255,0);
+	box-shadow: 0 0 0 #171717 inset, 0 -2px 2px #111 inset,0 1px rgba(255,255,255,0.08),0 -1px rgba(255,255,255,0) !important;
 }
 .category.stick.active{
 background: linear-gradient(180deg, #222 0%, #171717 100%) #171717;
