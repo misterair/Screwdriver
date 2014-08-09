@@ -3,5 +3,5 @@
   "author": "Mister aiR",
   "description": "Le meilleur thème pour FreshRSS",
   "version": 0.1,
-  "files": ["template.css", "screwdriver.css"]
+  "files": ["screwdriver.css","template.css"]
 }
