@@ -92,26 +92,6 @@ input.extend:focus {
 /*=== COMPONENTS */
 /*===============*/
 /*=== Forms */
-.form-group{
-	width: 100%;
-	float: left;
-	height: auto;
-	display: inline-block;
-}
-.form-group .group-controls a.btn.confirm{
-	border: solid 1px #ccc;
-	border-radius: 4px;
-}
-.form-group .group-controls a.btn{
-	color:#222;
-	border-left:none;
-	border-top: solid 1px #ccc;
-	border-right: solid 1px #ccc;
-	border-bottom: solid 1px #ccc;
-    background: linear-gradient(0deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
-    background: -webkit-linear-gradient(bottom, #EDE7DE 0%, #FFF 100%);
-}
-}
 .form-group:after {
 	content: "";
 	display: block;
@@ -191,7 +171,8 @@ a.btn {
 	margin: 0;
 	position: absolute;
 	right: 0;
-	background: #222;
+	background: #fff;
+	border: 1px solid #aaa;
 }
 .dropdown-header {
 	display: block;
@@ -297,7 +278,10 @@ a.btn {
 	display: inline-block;
 }
 .header > .item.title .logo {
-	display: none;
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	vertical-align: middle;
 }
 .header > .item.configure {
 	width: 100px;
@@ -313,11 +297,11 @@ a.btn {
 .aside {
 	display: table-cell;
 	height: 100%;
-	width: 235px;
+	width: 250px;
 	vertical-align: top;
 }
 .aside.aside_flux {
-	background: #222;
+	background: #fff;
 }
 
 /*=== Aside main page (categories) */
@@ -377,7 +361,6 @@ a.btn {
 
 /*=== Day indication */
 .day .name {
-	display: none;
 	position: absolute;
 	right: 0;
 	width: 50%;
@@ -402,16 +385,8 @@ a.btn {
 .flux .item.website {
 	width: 200px;
 }
-.flux .item.title {
-text-decoration: line-through;
-}
-.flux.favorite .item.title {
-text-decoration: none;
-}
-.flux.not_read .item.title {
-text-decoration: none;
-}
-.flux.not_read .item.title,.flux.current .item.title {
+.flux.not_read .item.title,
+.flux.current .item.title {
 	font-weight: bold;
 }
 .flux:not(.current):hover .item.title {
@@ -420,11 +395,8 @@ text-decoration: none;
 	background: #fff;
 }
 .flux .item.title a {
-	color: #333;
+	color: #000;
 	text-decoration: none;
-}
-.flux.current .item.title a {
-	color: #0f0f0f
 }
 .flux .item.date {
 	width: 145px;
@@ -510,7 +482,7 @@ text-decoration: none;
 	position: fixed;
 	bottom: 0; left: 0;
 	display: table;
-	width: 235px;
+	width: 250px;
 	background: #fff;
 	table-layout: fixed;
 }
@@ -553,6 +525,7 @@ text-decoration: none;
 	width: 19em;
 	max-width: 95%;
 	margin: 20px 10px;
+	border: 1px solid #ccc;
 	vertical-align: top;
 }
 #stream.global .category {
@@ -568,7 +541,6 @@ text-decoration: none;
 #stream.global .box-category .feed {
 	width: 19em;
 	max-width: 90%;
-	color:#222;
 }
 
 /*=== Panel */
@@ -586,8 +558,6 @@ text-decoration: none;
 	left: 2em; right: 2em;
 	overflow: auto;
 	background: #fff;
-	box-shadow: 0px 0px 4px #000;
-	border-radius: 8px;
 }
 #panel .close {
 	position: fixed;
