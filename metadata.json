@@ -1,7 +1,7 @@
 {
   "name": "Screwdriver",
   "author": "Mister aiR",
-  "description": "Le meilleur thème pour FreshRSS",
+  "description": "C'est un cocktail ! C'est chaud mais « fresh » à la fois. Ce thème tue du chaton.",
   "version": 0.1,
-  "files": ["screwdriver.css","template.css"]
+  "files": ["template.css", "screwdriver.css"]
 }
