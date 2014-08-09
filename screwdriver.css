@@ -201,9 +201,15 @@ a.btn {
 	text-decoration:none;
 }
 .btn.active,.btn:active,.dropdown-target:target ~ .btn.dropdown-toggle {
+	background: linear-gradient(180deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
+	background: -webkit-linear-gradient(top, #EDE7DE 0%, #FFF 100%);
+}
+.nav_menu .btn.active, .nav_menu .btn:active, .nav_menu .dropdown-target:target ~ .btn.dropdown-toggle{
 	box-shadow: 0px 2px #E2972A;
 	border-radius: 0 !important;
+	background:transparent;
 }
+
 .read_all {
 color:#222;
 }
@@ -214,7 +220,9 @@ border-radius: 4px;
 border: solid 1px #ccc;
 box-shadow: 0 1px #fff;
 }
-
+.btn.dropdown-toggle:active {
+	background:transparent;
+}
 .btn-important {
 	background: linear-gradient(180deg, #E4992C 0%, #D18114 100%) #E4992C;
 	background: -webkit-linear-gradient(top, #E4992C 0%, #D18114 100%);
@@ -257,7 +265,7 @@ box-shadow: 0 1px #fff;
 display: table !important;
 }
 .nav-login{
-display: none !important;
+display: none;
 }
 .nav-list .nav-header,
 .nav-list .item {
@@ -266,11 +274,10 @@ display: none !important;
 	font-size: 0.9rem;
 }
 .nav-list .item:hover {
-	text-shadow: 0 0 2px #fff;
+	text-shadow: 0 0 2px rgba(255,255,255,0.28);
 	color:#fff;
 }
-.nav-list .item:hover a {
-}
+
 .nav-list .item.active {
 	background: linear-gradient(180deg, #222 0%, #171717 100%) repeat scroll 0% 0% #171717;
 	background: -webkit-linear-gradient(180deg, #222 0%, #171717 100%);
@@ -557,6 +564,7 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 .category .btn:first-child {
 	position: relative;
 	width: 213px;
+	background: transparent; 
 }
 .category.stick .btn:first-child {
 	width: 176px;
@@ -1077,14 +1085,13 @@ box-shadow: 0px 1px #171717, 0px 1px rgba(255, 255, 255, 0.08) inset;
 		display: none;
 	}
 }
-@media (max-width: 700px) {
-	.header .item.search input:focus {
-		width:230px;
+@media (max-width: 768px) {
+	.header{
+		display: none !important;
 	}
-}
-@media (max-width: 580px) {
-	.header > .item.search {
-		display:none;
+	.nav-login {
+		display:inline-block;
+		width:100%;
 	}
 	.nav_menu .search {
 		display: inline-block;
