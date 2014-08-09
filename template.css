@@ -589,7 +589,7 @@ a.btn {
 
 /*=== MOBILE */
 /*===========*/
-@media (max-width: 900px) {
+@media(max-width: 840px) {
 	.header,
 	.aside .btn-important,
 	.aside .feeds .dropdown,
@@ -611,15 +611,14 @@ a.btn {
 
 	.aside {
 		position: fixed;
-		top: 0;
-		bottom: 0;
+		top: 0; bottom: 0;
 		left: 0;
 		width: 0;
 		overflow: hidden;
 		z-index: 100;
 	}
 	.aside:target {
-		width: 235px;
+		width: 90%;
 		overflow: auto;
 	}
 	.aside .categories {
