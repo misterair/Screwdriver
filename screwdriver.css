@@ -769,13 +769,13 @@ ul.feeds.active{
 }
 
 .flux .item.title {
-text-decoration: line-through;
+opacity: 0.35;
 }
 .flux.favorite .item.title {
-text-decoration: none;
+opacity: 1;
 }
 .flux.not_read .item.title {
-text-decoration: none;
+opacity: 1;
 }
 .flux.current .item.title a {
 	color: #0f0f0f;
@@ -1086,6 +1086,9 @@ text-decoration: none;
 	}
 	.aside:target {
 		width: 235px;
+	}
+	.aside.aside_flux {
+		overflow:auto;
 	}
 	.aside .toggle_aside,
 	#panel .close {
