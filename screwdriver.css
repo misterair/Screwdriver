@@ -545,7 +545,7 @@ a.btn {
 .aside.aside_flux {
 	padding: 10px 0 50px;
 	background: #222;
-	overflow:hidden;
+	overflow:auto;
 }
 
 /*=== Aside main page (categories) */
@@ -1087,9 +1087,6 @@ opacity: 1;
 	.aside:target {
 		width: 235px;
 	}
-	.aside.aside_flux {
-		overflow:auto;
-	}
 	.aside .toggle_aside,
 	#panel .close {
 		position: absolute;
@@ -1101,7 +1098,7 @@ opacity: 1;
 		text-align: center;
 		background: #171717;
 		box-shadow: 0 1px rgba(255,255,255,0.08);
-		border-radius: 0 0 0 5px;
+		border-radius: 0 8px 0 8px;
 	}
 	.aside .btn-important {
 		display: inline-block;
