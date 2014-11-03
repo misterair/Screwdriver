@@ -194,8 +194,8 @@ a.btn {
 .nav_menu .btn.active, .nav_menu .btn:active, .nav_menu .dropdown-target:target ~ .btn.dropdown-toggle{
 	box-shadow: 0 1px #fff;
 	border-radius: 4px;
-	background: linear-gradient(180deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
-	background: -webkit-linear-gradient(top, #EDE7DE 0%, #FFF 100%);
+	background: linear-gradient(180deg, #EDE7DE 0%, #F6F6F6 100%) #EDE7DE;
+	background: -webkit-linear-gradient(top, #EDE7DE 0%, #F6F6F6 100%);
 	border: solid 1px #ccc;
 }
 .nav_menu .btn {
@@ -717,8 +717,11 @@ a.btn {
 	padding: 0 10px;
 	font-style:italic;
 	line-height: 3em;
-	box-shadow: 0 4px 4px #CCC inset, 0 -1px rgba(255,255,255,0.28) inset;
-	color: #888;
+	box-shadow: 0 1px #BDB7AE inset, 0 -1px rgba(255,255,255,0.28) inset;
+	background: linear-gradient(0deg, #EDE7DE 0%, #C2BCB3 100%) #EDE7DE;
+    background: -webkit-linear-gradient(bottom, #C2BCB3 0%, #FFF 100%);
+	color: #666;
+	text-shadow: 0 1px rgba(255,255,255,0.28);
 	text-align: center;
 }
 #new-article + .day {
@@ -735,6 +738,22 @@ a.btn {
 	box-shadow:0 -1px rgba(255, 255, 255, 0.28) inset;
 	text-align: center;
 	padding: 5px 0;
+}
+#panel >.nav_menu{
+	background: linear-gradient(0deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
+    background: -webkit-linear-gradient(bottom, #EDE7DE 0%, #FFF 100%);
+}
+#panel > .nav_menu > #nav_menu_read_all{
+	background: linear-gradient(0deg, #EDE7DE 0%, #FFF 100%) #EDE7DE;
+    background: -webkit-linear-gradient(bottom, #EDE7DE 0%, #FFF 100%);
+	border-radius: 4px;
+	border: 1px solid #CCC;
+	box-shadow: 0px 1px #FFF;
+}
+#panel > .nav_menu > #nav_menu_read_all > .dropdown > .btn.dropdown-toggle{
+	border-radius: 0 4px 4px 0;
+	border:none;
+	border-left: solid 1px #ccc;
 }
 
 /*=== Feed articles */
@@ -943,7 +962,7 @@ opacity: 1;
 /*================*/
 #stream.global {
 	padding: 24px 0;
-	box-shadow: 0px 8px 8px #CCC inset;
+	box-shadow: 0px 8px 8px #C2BCB3 inset;
 }
 
 .box.category .box-title {
@@ -989,6 +1008,7 @@ opacity: 1;
 #panel {
 	box-shadow: 0px 0px 4px #000;
 	border-radius: 8px;
+	background:#EDE7DE;
 }
 /*=== DIVERS */
 /*===========*/
@@ -1067,6 +1087,14 @@ opacity: 1;
 .log.debug {
 	background: #333;
 	color: #eee;
+}
+
+#slider.active {
+    box-shadow: -4px 0 4px rgba(15, 15, 15, 0.55);
+    background: #F8F8F8;
+}
+#close-slider.active {
+    background: rgba(15, 15, 15, 0.35);
 }
 
 /*=== MOBILE */
