@@ -921,7 +921,7 @@ opacity: 1;
 	text-shadow: 0 -1px 0 #aaa;
 	color: #666;
 	background: #EDE7DE;
-	box-shadow: 0 4px 4px #CCC inset;
+	box-shadow: 0 1px rgba(255,255,255,0.28)inset;
 }
 #bigMarkAsRead:hover {
 	color: #000;
